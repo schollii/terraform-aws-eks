@@ -143,7 +143,7 @@ locals {
   ]
 
   default_kubeconfig_aws_auth_args = [
-    "--region", 
+    "--region",
     data.aws_region.this.name,
     "eks",
     "get-token",
